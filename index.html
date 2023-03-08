@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Car Website</title>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+            <a href="#"><img src="img/logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">NEWSLETTER</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just a vehicle.<br><span> It's a lifestyle</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor commodi fugit voluptates itaque corrupti nulla ratione saepe possimus reiciendis atque, consectetur accusantium consequatur odio reprehenderit provident neque iusto? Veniam.</p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/blackcar.png" class="car">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/blackcar.png" onclick="imgSlider('img/blackcar.png');changeBgColor('#454545')"></li>
+                <li><img src="img/whitecar.png" onclick="imgSlider('img/whitecar.png');changeBgColor('#98AFC7')"></li>
+                <li><img src="img/bluecar.png" onclick="imgSlider('img/bluecar.png');changeBgColor('#0062be')"></li>
+            </ul>
+            <ul class="social-media">
+              <li><a href="#"><img src="img/facebook.png"></a></li> 
+              <li><a href="#"><img src="img/instagram.png"></a></li>  
+              <li><a href="#"><img src="img/twitter.png"></a></li>   
+            </ul>
+        </section>
+     <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.car').src = anything;
+        }
+        function changeBgColor(color){
+            const sec= document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        
+     </script>
+    </body>
+</html>
